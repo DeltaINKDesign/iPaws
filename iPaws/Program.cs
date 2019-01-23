@@ -8,13 +8,13 @@ namespace iPaws
 {
     abstract class Pies
     {
-        public int Id { get; set; }
-        public string Nazwa { get; set; }
-        public string Plec { get; set; }
-        public int Wiek { get; set; }
-        public string Wielkosc { get; set; }
-        public string Rodzaj_siersci { get; set; }
-        public int Ilosc_Lap { get; set; }
+        private int Id { get; set; }
+        private string Nazwa { get; set; }
+        private string Plec { get; set; }
+        private int Wiek { get; set; }
+        private string Wielkosc { get; set; }
+        private string Rodzaj_siersci { get; set; }
+        private int Ilosc_Lap { get; set; }
         public Pies(int Id, string Nazwa,string Plec, int Wiek, string Wielkosc, string Rodzaj_siersci, int Ilosc_Lap)
         {
             this.Id = Id;
@@ -34,7 +34,7 @@ namespace iPaws
 
     class Rasowosc : Pies
     {
-        public string Rasowy { get; set; }
+        private string Rasowy { get; set; }
         public Rasowosc(int Id, string Nazwa,string Plec, int Wiek, string Wielkosc, string Rodzaj_siersci, int Ilosc_Lap, string Rasowy) : base(Id,  Nazwa,Plec, Wiek,  Wielkosc, Rodzaj_siersci, Ilosc_Lap )
         {
             this.Rasowy = Rasowy;
@@ -52,7 +52,7 @@ namespace iPaws
 
     class  Owczarki : Rasowosc
     {
-        public string Pracujace { get; set; }
+        private string Pracujace { get; set; }
 
         public Owczarki(int Id, string Nazwa, string Plec, int Wiek, string Wielkosc, string Rodzaj_siersci, int Ilosc_Lap, string Rasowy, string Pracujace ) : base( Id, Nazwa, Plec, Wiek, Wielkosc, Rodzaj_siersci, Ilosc_Lap, Rasowy)
         {
@@ -69,7 +69,7 @@ namespace iPaws
 
     class Molosowate : Rasowosc
     {
-        public string Dlugosc_Kufy { get; set; }
+        private string Dlugosc_Kufy { get; set; }
 
         public Molosowate(int Id, string Nazwa, string Plec, int Wiek, string Wielkosc, string Rodzaj_siersci, int Ilosc_Lap, string Rasowy, string Dlugosc_Kufy) : base(Id, Nazwa, Plec, Wiek, Wielkosc, Rodzaj_siersci, Ilosc_Lap, Rasowy)
         {
@@ -86,7 +86,7 @@ namespace iPaws
 
     class Teriery : Rasowosc
     {
-        public string Szczekajace { get; set; }
+        private string Szczekajace { get; set; }
 
         public Teriery(int Id, string Nazwa, string Plec, int Wiek, string Wielkosc, string Rodzaj_siersci, int Ilosc_Lap, string Rasowy, string Szczekajace) : base(Id, Nazwa, Plec, Wiek, Wielkosc, Rodzaj_siersci, Ilosc_Lap, Rasowy)
         {
@@ -103,7 +103,7 @@ namespace iPaws
 
     class Jamniki : Rasowosc
     {
-        public int DlugoscCiala { get; set; }
+        private int DlugoscCiala { get; set; }
 
         public Jamniki(int Id, string Nazwa, string Plec, int Wiek, string Wielkosc, string Rodzaj_siersci, int Ilosc_Lap, string Rasowy, int DlugoscCiala) : base(Id, Nazwa, Plec, Wiek, Wielkosc, Rodzaj_siersci, Ilosc_Lap, Rasowy)
         {
@@ -120,7 +120,7 @@ namespace iPaws
 
     class Pierwotne : Rasowosc
     {
-        public string Pochodzenie { get; set; }
+        private string Pochodzenie { get; set; }
 
         public Pierwotne(int Id, string Nazwa, string Plec, int Wiek, string Wielkosc, string Rodzaj_siersci, int Ilosc_Lap, string Rasowy, string Pochodzenie) : base(Id, Nazwa, Plec, Wiek, Wielkosc, Rodzaj_siersci, Ilosc_Lap, Rasowy)
         {
@@ -137,7 +137,7 @@ namespace iPaws
 
     class Goncze : Rasowosc
     {
-        public string Wytrzymalosc{ get; set; }
+        private string Wytrzymalosc{ get; set; }
 
         public Goncze(int Id, string Nazwa, string Plec, int Wiek, string Wielkosc, string Rodzaj_siersci, int Ilosc_Lap, string Rasowy, string Wytrzymalosc) : base(Id, Nazwa, Plec, Wiek, Wielkosc, Rodzaj_siersci, Ilosc_Lap, Rasowy)
         {
@@ -154,7 +154,7 @@ namespace iPaws
 
     class Wyżły : Rasowosc
     {
-        public string Umaszczenie { get; set; }
+        private string Umaszczenie { get; set; }
 
         public Wyżły(int Id, string Nazwa, string Plec, int Wiek, string Wielkosc, string Rodzaj_siersci, int Ilosc_Lap, string Rasowy, string Umaszczenie) : base(Id, Nazwa, Plec, Wiek, Wielkosc, Rodzaj_siersci, Ilosc_Lap, Rasowy)
         {
@@ -171,7 +171,7 @@ namespace iPaws
 
     class Retrivery : Rasowosc
     {
-        public int SzybkoscPlywania { get; set; }
+        private int SzybkoscPlywania { get; set; }
 
         public Retrivery(int Id, string Nazwa, string Plec, int Wiek, string Wielkosc, string Rodzaj_siersci, int Ilosc_Lap, string Rasowy, int SzybkoscPlywania) : base(Id, Nazwa, Plec, Wiek, Wielkosc, Rodzaj_siersci, Ilosc_Lap, Rasowy)
         {
@@ -188,7 +188,7 @@ namespace iPaws
 
     class Ozdobne : Rasowosc
     {
-        public int PoziomSlodkosci { get; set; }
+        private int PoziomSlodkosci { get; set; }
 
         public Ozdobne(int Id, string Nazwa, string Plec, int Wiek, string Wielkosc, string Rodzaj_siersci, int Ilosc_Lap, string Rasowy, int PoziomSlodkosci) : base(Id, Nazwa, Plec, Wiek, Wielkosc, Rodzaj_siersci, Ilosc_Lap, Rasowy)
         {
@@ -205,7 +205,7 @@ namespace iPaws
 
     class Charty : Rasowosc
     {
-        public int PredkoscBiegu { get; set; }
+        private int PredkoscBiegu { get; set; }
 
         public Charty(int Id, string Nazwa, string Plec, int Wiek, string Wielkosc, string Rodzaj_siersci, int Ilosc_Lap, string Rasowy, int PredkoscBiegu) : base(Id, Nazwa, Plec, Wiek, Wielkosc, Rodzaj_siersci, Ilosc_Lap, Rasowy)
         {
@@ -222,7 +222,7 @@ namespace iPaws
 
     class Nieuznane : Rasowosc
     {
-        public string Typ { get; set; }
+        private string Typ { get; set; }
 
         public Nieuznane(int Id, string Nazwa, string Plec, int Wiek, string Wielkosc, string Rodzaj_siersci, int Ilosc_Lap, string Rasowy, string Typ) : base(Id, Nazwa, Plec, Wiek, Wielkosc, Rodzaj_siersci, Ilosc_Lap, Rasowy)
         {
