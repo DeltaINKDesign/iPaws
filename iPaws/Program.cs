@@ -27,7 +27,7 @@ namespace iPaws
         }
         override public string ToString()
         {
-            return "Id: " + Id + " Nazwa: " + Nazwa +"Płeć : "+Plec +"Wiek: " + Wiek +"Wielkosc" + Wielkosc + "Rodzaj siersci: " + Rodzaj_siersci + "Ilosc Lap: " + Ilosc_Lap;
+            return "Id: " + Id + " Nazwa: " + Nazwa +" Płeć: "+Plec +" Wiek: " + Wiek +" Wielkosc: " + Wielkosc + " Rodzaj siersci: " + Rodzaj_siersci + " Ilosc Lap: " + Ilosc_Lap;
         }
 
     }
@@ -41,7 +41,7 @@ namespace iPaws
         }
         override public string ToString()
         {
-            return "Id: " + Id + " Nazwa: " + Nazwa + "Płeć : " + Plec + "Wiek: " + Wiek + "Wielkosc" + Wielkosc + "Rodzaj siersci: " + Rodzaj_siersci + "Ilosc Lap: " + Ilosc_Lap + "Rasowosc: " + Rasowy;
+            return base.ToString() + " Rasowosc: " + Rasowy;
         }
 
     }
@@ -62,7 +62,7 @@ namespace iPaws
 
         override public string ToString()
         {
-            return "Id: " + Id + " Nazwa: " + Nazwa + "Płeć : " + Plec + "Wiek: " + Wiek + "Wielkosc" + Wielkosc + "Rodzaj siersci: " + Rodzaj_siersci + "Ilosc Lap: " + Ilosc_Lap + "Rasowosc: " + Rasowy+ "Pracujace: " + Pracujace;
+            return base.ToString() + " Pracujace: " + Pracujace;
         }
 
     }
@@ -79,7 +79,7 @@ namespace iPaws
 
         override public string ToString()
         {
-            return "Id: " + Id + " Nazwa: " + Nazwa + "Płeć : " + Plec + "Wiek: " + Wiek + "Wielkosc" + Wielkosc + "Rodzaj siersci: " + Rodzaj_siersci + "Ilosc Lap: " + Ilosc_Lap + "Rasowosc: " + Rasowy + "Dlugosc kufy: " + Dlugosc_Kufy;
+            return base.ToString() + " Dlugosc kufy: " + Dlugosc_Kufy;
         }
 
     }
@@ -96,7 +96,7 @@ namespace iPaws
 
         override public string ToString()
         {
-            return "Id: " + Id + " Nazwa: " + Nazwa + "Płeć : " + Plec + "Wiek: " + Wiek + "Wielkosc" + Wielkosc + "Rodzaj siersci: " + Rodzaj_siersci + "Ilosc Lap: " + Ilosc_Lap + "Rasowosc: " + Rasowy + "Szczekajace: " + Szczekajace;
+            return base.ToString() + " Szczekajace: " + Szczekajace;
         }
 
     }
@@ -113,7 +113,7 @@ namespace iPaws
 
         override public string ToString()
         {
-            return "Id: " + Id + " Nazwa: " + Nazwa + "Płeć : " + Plec + "Wiek: " + Wiek + "Wielkosc" + Wielkosc + "Rodzaj siersci: " + Rodzaj_siersci + "Ilosc Lap: " + Ilosc_Lap + "Rasowosc: " + Rasowy + "Dlugosc ciala: " + DlugoscCiala;
+            return base.ToString() + " Dlugosc ciala: " + DlugoscCiala;
         }
 
     }
@@ -130,7 +130,7 @@ namespace iPaws
 
         override public string ToString()
         {
-            return "Id: " + Id + " Nazwa: " + Nazwa + "Płeć : " + Plec + "Wiek: " + Wiek + "Wielkosc" + Wielkosc + "Rodzaj siersci: " + Rodzaj_siersci + "Ilosc Lap: " + Ilosc_Lap + "Rasowosc: " + Rasowy + "Pochodzenie: " + Pochodzenie;
+            return base.ToString() + " Pochodzenie: " + Pochodzenie;
         }
 
     }
@@ -147,7 +147,7 @@ namespace iPaws
 
         override public string ToString()
         {
-            return "Id: " + Id + " Nazwa: " + Nazwa + "Płeć : " + Plec + "Wiek: " + Wiek + "Wielkosc" + Wielkosc + "Rodzaj siersci: " + Rodzaj_siersci + "Ilosc Lap: " + Ilosc_Lap + "Rasowosc: " + Rasowy + "Wytrzymalosc: " + Wytrzymalosc;
+            return base.ToString() + " Wytrzymalosc: " + Wytrzymalosc;
         }
 
     }
@@ -164,7 +164,7 @@ namespace iPaws
 
         override public string ToString()
         {
-            return "Id: " + Id + " Nazwa: " + Nazwa + "Płeć : " + Plec + "Wiek: " + Wiek + "Wielkosc" + Wielkosc + "Rodzaj siersci: " + Rodzaj_siersci + "Ilosc Lap: " + Ilosc_Lap + "Rasowosc: " + Rasowy + "Umaszczenie: " + Umaszczenie;
+            return base.ToString() + " Umaszczenie: " + Umaszczenie;
         }
 
     }
@@ -181,7 +181,7 @@ namespace iPaws
 
         override public string ToString()
         {
-            return "Id: " + Id + " Nazwa: " + Nazwa + "Płeć : " + Plec + "Wiek: " + Wiek + "Wielkosc" + Wielkosc + "Rodzaj siersci: " + Rodzaj_siersci + "Ilosc Lap: " + Ilosc_Lap + "Rasowosc: " + Rasowy + "Szybkosc plywania: " + SzybkoscPlywania;
+            return base.ToString() + " Szybkosc plywania: " + SzybkoscPlywania;
         }
 
     }
@@ -198,7 +198,7 @@ namespace iPaws
 
         override public string ToString()
         {
-            return "Id: " + Id + " Nazwa: " + Nazwa + "Płeć : " + Plec + "Wiek: " + Wiek + "Wielkosc" + Wielkosc + "Rodzaj siersci: " + Rodzaj_siersci + "Ilosc Lap: " + Ilosc_Lap + "Rasowosc: " + Rasowy + "Poziom słodkości: " + PoziomSlodkosci;
+            return base.ToString() + " Poziom słodkości: " + PoziomSlodkosci;
         }
 
     }
@@ -215,7 +215,7 @@ namespace iPaws
 
         override public string ToString()
         {
-            return "Id: " + Id + " Nazwa: " + Nazwa + "Płeć : " + Plec + "Wiek: " + Wiek + "Wielkosc" + Wielkosc + "Rodzaj siersci: " + Rodzaj_siersci + "Ilosc Lap: " + Ilosc_Lap + "Rasowosc: " + Rasowy + "Predkosc Biegu: " + PredkoscBiegu;
+            return base.ToString() + " Predkosc Biegu: " + PredkoscBiegu;
         }
 
     }
@@ -232,7 +232,7 @@ namespace iPaws
 
         override public string ToString()
         {
-            return "Id: " + Id + " Nazwa: " + Nazwa + "Płeć : " + Plec + "Wiek: " + Wiek + "Wielkosc" + Wielkosc + "Rodzaj siersci: " + Rodzaj_siersci + "Ilosc Lap: " + Ilosc_Lap + "Rasowosc: " + Rasowy + "Typ: " + Typ;
+            return base.ToString() + " Typ: " + Typ;
         }
 
     }
@@ -241,6 +241,18 @@ namespace iPaws
     {
         static void Main(string[] args)
         {
+            Pies[] psy = new Pies[4];
+
+            psy[0] = new Wyżły(1, "Pepka ", "Suka",4,"Mała","Krótka",4,"Tak","Biało-pomarańczowe");
+           
+           
+           
+            Console.WriteLine(psy[0]);
+            
+           
+
+           
+            Console.ReadKey();
 
 
         }
