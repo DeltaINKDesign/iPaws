@@ -57,182 +57,182 @@ namespace iPaws
         public Owczarki(int Id, string Nazwa, string Plec, int Wiek, string Wielkosc, string Rodzaj_siersci, int Ilosc_Lap, string Rasowy, string Pracujace ) : base( Id, Nazwa, Plec, Wiek, Wielkosc, Rodzaj_siersci, Ilosc_Lap, Rasowy)
         {
 
-            this.LiczbaMiejsc = LiczbaMiejsc;
+            this.Pracujace = Pracujace;
         }
 
         override public string ToString()
         {
-            return "Model: " + Model + " Predkosc: " + Predkosc + " Liczba miejsc: " + LiczbaMiejsc;
+            return "Id: " + Id + " Nazwa: " + Nazwa + "Płeć : " + Plec + "Wiek: " + Wiek + "Wielkosc" + Wielkosc + "Rodzaj siersci: " + Rodzaj_siersci + "Ilosc Lap: " + Ilosc_Lap + "Rasowosc: " + Rasowy+ "Pracujace: " + Pracujace;
         }
 
     }
 
     class Molosowate : Rasowosc
     {
-        public int LiczbaMiejsc { get; set; }
+        public string Dlugosc_Kufy { get; set; }
 
-        public Samolot(int Predkosc, string Model, int LiczbaMiejsc) : base(Predkosc, Model)
+        public Molosowate(int Id, string Nazwa, string Plec, int Wiek, string Wielkosc, string Rodzaj_siersci, int Ilosc_Lap, string Rasowy, string Dlugosc_Kufy) : base(Id, Nazwa, Plec, Wiek, Wielkosc, Rodzaj_siersci, Ilosc_Lap, Rasowy)
         {
 
-            this.LiczbaMiejsc = LiczbaMiejsc;
+            this.Dlugosc_Kufy = Dlugosc_Kufy;
         }
 
         override public string ToString()
         {
-            return "Model: " + Model + " Predkosc: " + Predkosc + " Liczba miejsc: " + LiczbaMiejsc;
+            return "Id: " + Id + " Nazwa: " + Nazwa + "Płeć : " + Plec + "Wiek: " + Wiek + "Wielkosc" + Wielkosc + "Rodzaj siersci: " + Rodzaj_siersci + "Ilosc Lap: " + Ilosc_Lap + "Rasowosc: " + Rasowy + "Dlugosc kufy: " + Dlugosc_Kufy;
         }
 
     }
 
     class Teriery : Rasowosc
     {
-        public int LiczbaMiejsc { get; set; }
+        public string Szczekajace { get; set; }
 
-        public Samolot(int Predkosc, string Model, int LiczbaMiejsc) : base(Predkosc, Model)
+        public Teriery(int Id, string Nazwa, string Plec, int Wiek, string Wielkosc, string Rodzaj_siersci, int Ilosc_Lap, string Rasowy, string Szczekajace) : base(Id, Nazwa, Plec, Wiek, Wielkosc, Rodzaj_siersci, Ilosc_Lap, Rasowy)
         {
 
-            this.LiczbaMiejsc = LiczbaMiejsc;
+            this.Szczekajace = Szczekajace;
         }
 
         override public string ToString()
         {
-            return "Model: " + Model + " Predkosc: " + Predkosc + " Liczba miejsc: " + LiczbaMiejsc;
+            return "Id: " + Id + " Nazwa: " + Nazwa + "Płeć : " + Plec + "Wiek: " + Wiek + "Wielkosc" + Wielkosc + "Rodzaj siersci: " + Rodzaj_siersci + "Ilosc Lap: " + Ilosc_Lap + "Rasowosc: " + Rasowy + "Szczekajace: " + Szczekajace;
         }
 
     }
 
     class Jamniki : Rasowosc
     {
-        public int LiczbaMiejsc { get; set; }
+        public int DlugoscCiala { get; set; }
 
-        public Samolot(int Predkosc, string Model, int LiczbaMiejsc) : base(Predkosc, Model)
+        public Jamniki(int Id, string Nazwa, string Plec, int Wiek, string Wielkosc, string Rodzaj_siersci, int Ilosc_Lap, string Rasowy, int DlugoscCiala) : base(Id, Nazwa, Plec, Wiek, Wielkosc, Rodzaj_siersci, Ilosc_Lap, Rasowy)
         {
 
-            this.LiczbaMiejsc = LiczbaMiejsc;
+            this.DlugoscCiala = DlugoscCiala;
         }
 
         override public string ToString()
         {
-            return "Model: " + Model + " Predkosc: " + Predkosc + " Liczba miejsc: " + LiczbaMiejsc;
+            return "Id: " + Id + " Nazwa: " + Nazwa + "Płeć : " + Plec + "Wiek: " + Wiek + "Wielkosc" + Wielkosc + "Rodzaj siersci: " + Rodzaj_siersci + "Ilosc Lap: " + Ilosc_Lap + "Rasowosc: " + Rasowy + "Dlugosc ciala: " + DlugoscCiala;
         }
 
     }
 
     class Pierwotne : Rasowosc
     {
-        public int LiczbaMiejsc { get; set; }
+        public string Pochodzenie { get; set; }
 
-        public Samolot(int Predkosc, string Model, int LiczbaMiejsc) : base(Predkosc, Model)
+        public Pierwotne(int Id, string Nazwa, string Plec, int Wiek, string Wielkosc, string Rodzaj_siersci, int Ilosc_Lap, string Rasowy, string Pochodzenie) : base(Id, Nazwa, Plec, Wiek, Wielkosc, Rodzaj_siersci, Ilosc_Lap, Rasowy)
         {
 
-            this.LiczbaMiejsc = LiczbaMiejsc;
+            this.Pochodzenie = Pochodzenie;
         }
 
         override public string ToString()
         {
-            return "Model: " + Model + " Predkosc: " + Predkosc + " Liczba miejsc: " + LiczbaMiejsc;
+            return "Id: " + Id + " Nazwa: " + Nazwa + "Płeć : " + Plec + "Wiek: " + Wiek + "Wielkosc" + Wielkosc + "Rodzaj siersci: " + Rodzaj_siersci + "Ilosc Lap: " + Ilosc_Lap + "Rasowosc: " + Rasowy + "Pochodzenie: " + Pochodzenie;
         }
 
     }
 
-    class Gończe : Rasowosc
+    class Goncze : Rasowosc
     {
-        public int LiczbaMiejsc { get; set; }
+        public string Wytrzymalosc{ get; set; }
 
-        public Samolot(int Predkosc, string Model, int LiczbaMiejsc) : base(Predkosc, Model)
+        public Goncze(int Id, string Nazwa, string Plec, int Wiek, string Wielkosc, string Rodzaj_siersci, int Ilosc_Lap, string Rasowy, string Wytrzymalosc) : base(Id, Nazwa, Plec, Wiek, Wielkosc, Rodzaj_siersci, Ilosc_Lap, Rasowy)
         {
 
-            this.LiczbaMiejsc = LiczbaMiejsc;
+            this.Wytrzymalosc = Wytrzymalosc;
         }
 
         override public string ToString()
         {
-            return "Model: " + Model + " Predkosc: " + Predkosc + " Liczba miejsc: " + LiczbaMiejsc;
+            return "Id: " + Id + " Nazwa: " + Nazwa + "Płeć : " + Plec + "Wiek: " + Wiek + "Wielkosc" + Wielkosc + "Rodzaj siersci: " + Rodzaj_siersci + "Ilosc Lap: " + Ilosc_Lap + "Rasowosc: " + Rasowy + "Wytrzymalosc: " + Wytrzymalosc;
         }
 
     }
 
     class Wyżły : Rasowosc
     {
-        public int LiczbaMiejsc { get; set; }
+        public string Umaszczenie { get; set; }
 
-        public Samolot(int Predkosc, string Model, int LiczbaMiejsc) : base(Predkosc, Model)
+        public Wyżły(int Id, string Nazwa, string Plec, int Wiek, string Wielkosc, string Rodzaj_siersci, int Ilosc_Lap, string Rasowy, string Umaszczenie) : base(Id, Nazwa, Plec, Wiek, Wielkosc, Rodzaj_siersci, Ilosc_Lap, Rasowy)
         {
 
-            this.LiczbaMiejsc = LiczbaMiejsc;
+            this.Umaszczenie = Umaszczenie;
         }
 
         override public string ToString()
         {
-            return "Model: " + Model + " Predkosc: " + Predkosc + " Liczba miejsc: " + LiczbaMiejsc;
+            return "Id: " + Id + " Nazwa: " + Nazwa + "Płeć : " + Plec + "Wiek: " + Wiek + "Wielkosc" + Wielkosc + "Rodzaj siersci: " + Rodzaj_siersci + "Ilosc Lap: " + Ilosc_Lap + "Rasowosc: " + Rasowy + "Umaszczenie: " + Umaszczenie;
         }
 
     }
 
     class Retrivery : Rasowosc
     {
-        public int LiczbaMiejsc { get; set; }
+        public int SzybkoscPlywania { get; set; }
 
-        public Samolot(int Predkosc, string Model, int LiczbaMiejsc) : base(Predkosc, Model)
+        public Retrivery(int Id, string Nazwa, string Plec, int Wiek, string Wielkosc, string Rodzaj_siersci, int Ilosc_Lap, string Rasowy, int SzybkoscPlywania) : base(Id, Nazwa, Plec, Wiek, Wielkosc, Rodzaj_siersci, Ilosc_Lap, Rasowy)
         {
 
-            this.LiczbaMiejsc = LiczbaMiejsc;
+            this.SzybkoscPlywania = SzybkoscPlywania;
         }
 
         override public string ToString()
         {
-            return "Model: " + Model + " Predkosc: " + Predkosc + " Liczba miejsc: " + LiczbaMiejsc;
+            return "Id: " + Id + " Nazwa: " + Nazwa + "Płeć : " + Plec + "Wiek: " + Wiek + "Wielkosc" + Wielkosc + "Rodzaj siersci: " + Rodzaj_siersci + "Ilosc Lap: " + Ilosc_Lap + "Rasowosc: " + Rasowy + "Szybkosc plywania: " + SzybkoscPlywania;
         }
 
     }
 
     class Ozdobne : Rasowosc
     {
-        public int LiczbaMiejsc { get; set; }
+        public int PoziomSlodkosci { get; set; }
 
-        public Samolot(int Predkosc, string Model, int LiczbaMiejsc) : base(Predkosc, Model)
+        public Ozdobne(int Id, string Nazwa, string Plec, int Wiek, string Wielkosc, string Rodzaj_siersci, int Ilosc_Lap, string Rasowy, int PoziomSlodkosci) : base(Id, Nazwa, Plec, Wiek, Wielkosc, Rodzaj_siersci, Ilosc_Lap, Rasowy)
         {
 
-            this.LiczbaMiejsc = LiczbaMiejsc;
+            this.PoziomSlodkosci = PoziomSlodkosci;
         }
 
         override public string ToString()
         {
-            return "Model: " + Model + " Predkosc: " + Predkosc + " Liczba miejsc: " + LiczbaMiejsc;
+            return "Id: " + Id + " Nazwa: " + Nazwa + "Płeć : " + Plec + "Wiek: " + Wiek + "Wielkosc" + Wielkosc + "Rodzaj siersci: " + Rodzaj_siersci + "Ilosc Lap: " + Ilosc_Lap + "Rasowosc: " + Rasowy + "Poziom słodkości: " + PoziomSlodkosci;
         }
 
     }
 
     class Charty : Rasowosc
     {
-        public int LiczbaMiejsc { get; set; }
+        public int PredkoscBiegu { get; set; }
 
-        public Samolot(int Predkosc, string Model, int LiczbaMiejsc) : base(Predkosc, Model)
+        public Charty(int Id, string Nazwa, string Plec, int Wiek, string Wielkosc, string Rodzaj_siersci, int Ilosc_Lap, string Rasowy, int PredkoscBiegu) : base(Id, Nazwa, Plec, Wiek, Wielkosc, Rodzaj_siersci, Ilosc_Lap, Rasowy)
         {
 
-            this.LiczbaMiejsc = LiczbaMiejsc;
+            this.PredkoscBiegu = PredkoscBiegu;
         }
 
         override public string ToString()
         {
-            return "Model: " + Model + " Predkosc: " + Predkosc + " Liczba miejsc: " + LiczbaMiejsc;
+            return "Id: " + Id + " Nazwa: " + Nazwa + "Płeć : " + Plec + "Wiek: " + Wiek + "Wielkosc" + Wielkosc + "Rodzaj siersci: " + Rodzaj_siersci + "Ilosc Lap: " + Ilosc_Lap + "Rasowosc: " + Rasowy + "Predkosc Biegu: " + PredkoscBiegu;
         }
 
     }
 
     class Nieuznane : Rasowosc
     {
-        public int LiczbaMiejsc { get; set; }
+        public string Typ { get; set; }
 
-        public Samolot(int Predkosc, string Model, int LiczbaMiejsc) : base(Predkosc, Model)
+        public Nieuznane(int Id, string Nazwa, string Plec, int Wiek, string Wielkosc, string Rodzaj_siersci, int Ilosc_Lap, string Rasowy, string Typ) : base(Id, Nazwa, Plec, Wiek, Wielkosc, Rodzaj_siersci, Ilosc_Lap, Rasowy)
         {
 
-            this.LiczbaMiejsc = LiczbaMiejsc;
+            this.Typ = Typ;
         }
 
         override public string ToString()
         {
-            return "Model: " + Model + " Predkosc: " + Predkosc + " Liczba miejsc: " + LiczbaMiejsc;
+            return "Id: " + Id + " Nazwa: " + Nazwa + "Płeć : " + Plec + "Wiek: " + Wiek + "Wielkosc" + Wielkosc + "Rodzaj siersci: " + Rodzaj_siersci + "Ilosc Lap: " + Ilosc_Lap + "Rasowosc: " + Rasowy + "Typ: " + Typ;
         }
 
     }
