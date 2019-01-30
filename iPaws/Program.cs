@@ -506,5 +506,19 @@ namespace iPaws
                         }
                         break;
                 }
-    }
+                case 2:
+                        Console.Clear();
+                Console.WriteLine("Podaj ID przedmiotu który chcesz usunąć: ");
+                int identyfikator = int.Parse(Console.ReadLine());
+                foreach (Pies i in psy)
+                {
+                    if (i.ID == identyfikator)
+                    {
+                        psy.Remove(i);
+                        Console.WriteLine("Usunąłem psa o ID = " + identyfikator);
+                        break;
+                    }
+                }
+                break;
+            }
 }
