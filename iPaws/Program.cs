@@ -250,7 +250,261 @@ namespace iPaws
                         podtyp = int.Parse(Console.ReadLine());
                         switch (podtyp)
                         {
-
+                            case 1:
+                                {
+                                    Console.WriteLine("Podaj idetyfikator (Liczba): ");
+                                    int id = int.Parse(Console.ReadLine());
+                                    Console.WriteLine("Podaj nazwe (Tekst): ");
+                                    string nazwa = Console.ReadLine();
+                                    Console.WriteLine("Podaj płeć (Tekst): ");
+                                    string plec = Console.ReadLine();
+                                    Console.WriteLine("Podaj wiek (Liczba): ");
+                                    int wiek = int.Parse(Console.ReadLine());
+                                    Console.WriteLine("Podaj wielkość (mały, średni, duży): ");
+                                    string wielkosc = Console.ReadLine();
+                                    Console.WriteLine("Podaj rodzaj sierści (krotka, szorstka, dluga): ");
+                                    string siersc = Console.ReadLine();
+                                    Console.WriteLine("Podaj ilość łap (Liczba): ");
+                                    int lapy = int.Parse(Console.ReadLine());
+                                    Console.WriteLine("Czy rasowy ? (Tak/Nie): ");
+                                    string rasowy = Console.ReadLine();
+                                    Console.WriteLine("Pracujący ? (Tak/Nie) ");
+                                    string pracujacy = Console.ReadLine();
+                                    psy.Add(new Owczarki(id, nazwa, plec, wiek, wielkosc, siersc, lapy, rasowy, pracujacy));
+                                    break;
+                                }
+                            case 2:
+                                {
+                                    Console.WriteLine("Podaj idetyfikator: ");
+                                    int id = int.Parse(Console.ReadLine());
+                                    Console.WriteLine("Podaj nazwe: ");
+                                    string nazwa = Console.ReadLine();
+                                    Console.WriteLine("Podaj płeć: ");
+                                    string plec = Console.ReadLine();
+                                    Console.WriteLine("Podaj wiek: ");
+                                    int wiek = int.Parse(Console.ReadLine());
+                                    Console.WriteLine("Podaj wielkość (mały, średni, duży): ");
+                                    string wielkosc = Console.ReadLine();
+                                    Console.WriteLine("Podaj rodzaj sierści: ");
+                                    string siersc = Console.ReadLine();
+                                    Console.WriteLine("Podaj ilość łap: ");
+                                    int lapy = int.Parse(Console.ReadLine());
+                                    Console.WriteLine("Czy rasowy ? ");
+                                    string rasowy = Console.ReadLine();
+                                    Console.WriteLine("Dlugość kufy (Długa, krótka): ? ");
+                                    string kufa = Console.ReadLine();
+                                    psy.Add(new Molosowate(id, nazwa, plec, wiek, wielkosc, siersc, lapy, rasowy, kufa));
+                                    break;
+                                }
+                            case 3:
+                                {
+                                    Console.WriteLine("Podaj idetyfikator: ");
+                                    int id = int.Parse(Console.ReadLine());
+                                    Console.WriteLine("Podaj nazwe: ");
+                                    string nazwa = Console.ReadLine();
+                                    Console.WriteLine("Podaj płeć: ");
+                                    string plec = Console.ReadLine();
+                                    Console.WriteLine("Podaj wiek: ");
+                                    int wiek = int.Parse(Console.ReadLine());
+                                    Console.WriteLine("Podaj wielkość (mały, średni, duży): ");
+                                    string wielkosc = Console.ReadLine();
+                                    Console.WriteLine("Podaj rodzaj sierści: ");
+                                    string siersc = Console.ReadLine();
+                                    Console.WriteLine("Podaj ilość łap: ");
+                                    int lapy = int.Parse(Console.ReadLine());
+                                    Console.WriteLine("Czy rasowy ? ");
+                                    string rasowy = Console.ReadLine();
+                                    Console.WriteLine("Poziom szczekania (niski, średni, wysoki) ? ");
+                                    string szczekanie = Console.ReadLine();
+                                    psy.Add(new Teriery(id, nazwa, plec, wiek, wielkosc, siersc, lapy, rasowy, szczekanie));
+                                    break;
+                                }
+                            case 4:
+                                {
+                                    Console.WriteLine("Podaj idetyfikator: ");
+                                    int id = int.Parse(Console.ReadLine());
+                                    Console.WriteLine("Podaj nazwe: ");
+                                    string nazwa = Console.ReadLine();
+                                    Console.WriteLine("Podaj płeć: ");
+                                    string plec = Console.ReadLine();
+                                    Console.WriteLine("Podaj wiek: ");
+                                    int wiek = int.Parse(Console.ReadLine());
+                                    Console.WriteLine("Podaj wielkość (mały, średni, duży): ");
+                                    string wielkosc = Console.ReadLine();
+                                    Console.WriteLine("Podaj rodzaj sierści: ");
+                                    string siersc = Console.ReadLine();
+                                    Console.WriteLine("Podaj ilość łap: ");
+                                    int lapy = int.Parse(Console.ReadLine());
+                                    Console.WriteLine("Czy rasowy ? ");
+                                    string rasowy = Console.ReadLine();
+                                    Console.WriteLine("Dlugość ciała (w cm) ? ");
+                                    int dlugoscciala = int.Parse(Console.ReadLine());
+                                    psy.Add(new Jamniki(id, nazwa, plec, wiek, wielkosc, siersc, lapy, rasowy, dlugoscciala));
+                                    break;
+                                }
+                            case 5:
+                                {
+                                    Console.WriteLine("Podaj idetyfikator: ");
+                                    int id = int.Parse(Console.ReadLine());
+                                    Console.WriteLine("Podaj nazwe: ");
+                                    string nazwa = Console.ReadLine();
+                                    Console.WriteLine("Podaj płeć: ");
+                                    string plec = Console.ReadLine();
+                                    Console.WriteLine("Podaj wiek: ");
+                                    int wiek = int.Parse(Console.ReadLine());
+                                    Console.WriteLine("Podaj wielkość (mały, średni, duży): ");
+                                    string wielkosc = Console.ReadLine();
+                                    Console.WriteLine("Podaj rodzaj sierści: ");
+                                    string siersc = Console.ReadLine();
+                                    Console.WriteLine("Podaj ilość łap: ");
+                                    int lapy = int.Parse(Console.ReadLine());
+                                    Console.WriteLine("Czy rasowy ? ");
+                                    string rasowy = Console.ReadLine();
+                                    Console.WriteLine("Kraj pochodzenia ? ");
+                                    string pochodzenie = Console.ReadLine();
+                                    psy.Add(new Pierwotne(id, nazwa, plec, wiek, wielkosc, siersc, lapy, rasowy, pochodzenie));
+                                    break;
+                                }
+                            case 6:
+                                {
+                                    Console.WriteLine("Podaj idetyfikator: ");
+                                    int id = int.Parse(Console.ReadLine());
+                                    Console.WriteLine("Podaj nazwe: ");
+                                    string nazwa = Console.ReadLine();
+                                    Console.WriteLine("Podaj płeć: ");
+                                    string plec = Console.ReadLine();
+                                    Console.WriteLine("Podaj wiek: ");
+                                    int wiek = int.Parse(Console.ReadLine());
+                                    Console.WriteLine("Podaj wielkość (mały, średni, duży): ");
+                                    string wielkosc = Console.ReadLine();
+                                    Console.WriteLine("Podaj rodzaj sierści: ");
+                                    string siersc = Console.ReadLine();
+                                    Console.WriteLine("Podaj ilość łap: ");
+                                    int lapy = int.Parse(Console.ReadLine());
+                                    Console.WriteLine("Czy rasowy ? ");
+                                    string rasowy = Console.ReadLine();
+                                    Console.WriteLine("Wytrzymalość (mała, średnia, duża) ? ");
+                                    string wytrzymalosc = Console.ReadLine();
+                                    psy.Add(new Goncze(id, nazwa, plec, wiek, wielkosc, siersc, lapy, rasowy, wytrzymalosc));
+                                    break;
+                                }
+                            case 7:
+                                {
+                                    Console.WriteLine("Podaj idetyfikator: ");
+                                    int id = int.Parse(Console.ReadLine());
+                                    Console.WriteLine("Podaj nazwe: ");
+                                    string nazwa = Console.ReadLine();
+                                    Console.WriteLine("Podaj płeć: ");
+                                    string plec = Console.ReadLine();
+                                    Console.WriteLine("Podaj wiek: ");
+                                    int wiek = int.Parse(Console.ReadLine());
+                                    Console.WriteLine("Podaj wielkość (mały, średni, duży): ");
+                                    string wielkosc = Console.ReadLine();
+                                    Console.WriteLine("Podaj rodzaj sierści: ");
+                                    string siersc = Console.ReadLine();
+                                    Console.WriteLine("Podaj ilość łap: ");
+                                    int lapy = int.Parse(Console.ReadLine());
+                                    Console.WriteLine("Czy rasowy ? ");
+                                    string rasowy = Console.ReadLine();
+                                    Console.WriteLine("Umaszczenie ? ");
+                                    string umaszczenie = Console.ReadLine();
+                                    psy.Add(new Wyżły(id, nazwa, plec, wiek, wielkosc, siersc, lapy, rasowy, umaszczenie));
+                                    break;
+                                }
+                            case 8:
+                                {
+                                    Console.WriteLine("Podaj idetyfikator: ");
+                                    int id = int.Parse(Console.ReadLine());
+                                    Console.WriteLine("Podaj nazwe: ");
+                                    string nazwa = Console.ReadLine();
+                                    Console.WriteLine("Podaj płeć: ");
+                                    string plec = Console.ReadLine();
+                                    Console.WriteLine("Podaj wiek: ");
+                                    int wiek = int.Parse(Console.ReadLine());
+                                    Console.WriteLine("Podaj wielkość (mały, średni, duży): ");
+                                    string wielkosc = Console.ReadLine();
+                                    Console.WriteLine("Podaj rodzaj sierści: ");
+                                    string siersc = Console.ReadLine();
+                                    Console.WriteLine("Podaj ilość łap: ");
+                                    int lapy = int.Parse(Console.ReadLine());
+                                    Console.WriteLine("Czy rasowy ? ");
+                                    string rasowy = Console.ReadLine();
+                                    Console.WriteLine("Szybkość pływania (poziom 1,2 czy 3) ? ");
+                                    int szybkoscplywania = int.Parse(Console.ReadLine());
+                                    psy.Add(new Retrivery(id, nazwa, plec, wiek, wielkosc, siersc, lapy, rasowy, szybkoscplywania));
+                                    break;
+                                }
+                            case 9:
+                                {
+                                    Console.WriteLine("Podaj idetyfikator: ");
+                                    int id = int.Parse(Console.ReadLine());
+                                    Console.WriteLine("Podaj nazwe: ");
+                                    string nazwa = Console.ReadLine();
+                                    Console.WriteLine("Podaj płeć: ");
+                                    string plec = Console.ReadLine();
+                                    Console.WriteLine("Podaj wiek: ");
+                                    int wiek = int.Parse(Console.ReadLine());
+                                    Console.WriteLine("Podaj wielkość (mały, średni, duży): ");
+                                    string wielkosc = Console.ReadLine();
+                                    Console.WriteLine("Podaj rodzaj sierści: ");
+                                    string siersc = Console.ReadLine();
+                                    Console.WriteLine("Podaj ilość łap: ");
+                                    int lapy = int.Parse(Console.ReadLine());
+                                    Console.WriteLine("Czy rasowy ? ");
+                                    string rasowy = Console.ReadLine();
+                                    Console.WriteLine("Poziom słodkości 0-10 ? ");
+                                    int slodkosc = int.Parse(Console.ReadLine());
+                                    psy.Add(new Ozdobne(id, nazwa, plec, wiek, wielkosc, siersc, lapy, rasowy, slodkosc));
+                                    break;
+                                }
+                            case 10:
+                                {
+                                    Console.WriteLine("Podaj idetyfikator: ");
+                                    int id = int.Parse(Console.ReadLine());
+                                    Console.WriteLine("Podaj nazwe: ");
+                                    string nazwa = Console.ReadLine();
+                                    Console.WriteLine("Podaj płeć: ");
+                                    string plec = Console.ReadLine();
+                                    Console.WriteLine("Podaj wiek: ");
+                                    int wiek = int.Parse(Console.ReadLine());
+                                    Console.WriteLine("Podaj wielkość (mały, średni, duży): ");
+                                    string wielkosc = Console.ReadLine();
+                                    Console.WriteLine("Podaj rodzaj sierści: ");
+                                    string siersc = Console.ReadLine();
+                                    Console.WriteLine("Podaj ilość łap: ");
+                                    int lapy = int.Parse(Console.ReadLine());
+                                    Console.WriteLine("Czy rasowy ? ");
+                                    string rasowy = Console.ReadLine();
+                                    Console.WriteLine("Prędkość biegu 0-10 ? ");
+                                    int predkoscbiegu = int.Parse(Console.ReadLine());
+                                    psy.Add(new Charty(id, nazwa, plec, wiek, wielkosc, siersc, lapy, rasowy, predkoscbiegu));
+                                    break;
+                                }
+                            case 11:
+                                {
+                                    Console.WriteLine("Podaj idetyfikator: ");
+                                    int id = int.Parse(Console.ReadLine());
+                                    Console.WriteLine("Podaj nazwe: ");
+                                    string nazwa = Console.ReadLine();
+                                    Console.WriteLine("Podaj płeć: ");
+                                    string plec = Console.ReadLine();
+                                    Console.WriteLine("Podaj wiek: ");
+                                    int wiek = int.Parse(Console.ReadLine());
+                                    Console.WriteLine("Podaj wielkość (mały, średni, duży): ");
+                                    string wielkosc = Console.ReadLine();
+                                    Console.WriteLine("Podaj rodzaj sierści: ");
+                                    string siersc = Console.ReadLine();
+                                    Console.WriteLine("Podaj ilość łap: ");
+                                    int lapy = int.Parse(Console.ReadLine());
+                                    Console.WriteLine("Czy rasowy ? ");
+                                    string rasowy = Console.ReadLine();
+                                    Console.WriteLine("Typ rasy ? ");
+                                    string typ = Console.ReadLine();
+                                    psy.Add(new Nieuznane(id, nazwa, plec, wiek, wielkosc, siersc, lapy, rasowy, typ));
+                                    break;
+                                }
                         }
+                        break;
+                }
     }
 }
