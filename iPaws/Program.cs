@@ -77,6 +77,7 @@ namespace iPaws
         }
 
     }
+
     class Teriery : Rasowosc
     {
         private string Szczekajace { get; set; }
