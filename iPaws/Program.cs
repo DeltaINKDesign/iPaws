@@ -45,6 +45,11 @@ namespace iPaws
         }
 
     }
+
+
+
+
+
     class Owczarki : Rasowosc
     {
         private string Pracujace { get; set; }
@@ -61,6 +66,7 @@ namespace iPaws
         }
 
     }
+
     class Molosowate : Rasowosc
     {
         private string Dlugosc_Kufy { get; set; }
@@ -131,7 +137,7 @@ namespace iPaws
 
     class Goncze : Rasowosc
     {
-        private string Wytrzymalosc{ get; set; }
+        private string Wytrzymalosc { get; set; }
 
         public Goncze(int Id, string Nazwa, string Plec, int Wiek, string Wielkosc, string Rodzaj_siersci, int Ilosc_Lap, string Rasowy, string Wytrzymalosc) : base(Id, Nazwa, Plec, Wiek, Wielkosc, Rodzaj_siersci, Ilosc_Lap, Rasowy)
         {
@@ -228,9 +234,7 @@ namespace iPaws
         {
             return base.ToString() + " Typ: " + Typ;
         }
-
     }
-
     class Program
     {
         static void Main(string[] args)
@@ -505,97 +509,100 @@ namespace iPaws
                                 }
                         }
                         break;
-                }
-                case 2:
+                    case 2:
                         Console.Clear();
-                Console.WriteLine("Podaj ID przedmiotu który chcesz usunąć: ");
-                int identyfikator = int.Parse(Console.ReadLine());
-                foreach (Pies i in psy)
-                {
-                    if (i.ID == identyfikator)
-                    {
-                        psy.Remove(i);
-                        Console.WriteLine("Usunąłem psa o ID = " + identyfikator);
+                        Console.WriteLine("Podaj ID przedmiotu który chcesz usunąć: ");
+                        int identyfikator = int.Parse(Console.ReadLine());
+                        foreach (Pies i in psy)
+                        {
+                            if (i.ID == identyfikator)
+                            {
+                                psy.Remove(i);
+                                Console.WriteLine("Usunąłem psa o ID = " + identyfikator);
+                                break;
+                            }
+                        }
                         break;
-                    }
-                }
-                break;
-            }
-            case 3:
+                    case 3:
                         Console.Clear();
-            Console.WriteLine("3. Wyświetlanie wszystkich zapamiętanych obiektów");
-            foreach (Pies aPart in psy)
-            {
-                Console.WriteLine(aPart);
-            }
-            break;
-            case 4:
+                        Console.WriteLine("3. Wyświetlanie wszystkich zapamiętanych obiektów");
+                        foreach (Pies aPart in psy)
+                        {
+                            Console.WriteLine(aPart);
+                        }
+                        break;
+                    case 4:
                         Console.Clear();
-            Console.WriteLine("4. Wyświetlanie obiektów danego podtypu");
-            Console.WriteLine("\n1. Owczarki\n2. Molosowate\n3. Teriery\n4. Jamniki\n5. Pierwotne\n6. Goncze\n7. Wyzly\n8. Retrivery\n9. Ozdobne\n10. Charty\n11. Nieznane\nPodaj numer podtypu: ");
-            podtyp = int.Parse(Console.ReadLine());
-            foreach (Pies i in psy)
-            {
-                if (i is Owczarki && podtyp == 1)
-                {
-                    Console.WriteLine(i);
-                }
-                if (i is Owczarki && podtyp == 2)
-                {
-                    Console.WriteLine(i);
-                }
-                if (i is Owczarki && podtyp == 3)
-                {
-                    Console.WriteLine(i);
-                }
-                if (i is Owczarki && podtyp == 4)
-                {
-                    Console.WriteLine(i);
-                }
-                if (i is Owczarki && podtyp == 5)
-                {
-                    Console.WriteLine(i);
-                }
-                if (i is Owczarki && podtyp == 6)
-                {
-                    Console.WriteLine(i);
-                }
-                if (i is Owczarki && podtyp == 7)
-                {
-                    Console.WriteLine(i);
-                }
-                if (i is Owczarki && podtyp == 8)
-                {
-                    Console.WriteLine(i);
-                }
-                if (i is Owczarki && podtyp == 9)
-                {
-                    Console.WriteLine(i);
-                }
-                if (i is Owczarki && podtyp == 10)
-                {
-                    Console.WriteLine(i);
-                }
-                if (i is Owczarki && podtyp == 11)
-                {
-                    Console.WriteLine(i);
-                }
-            }
-            break;
-             case 5:
+                        Console.WriteLine("4. Wyświetlanie obiektów danego podtypu");
+                        Console.WriteLine("\n1. Owczarki\n2. Molosowate\n3. Teriery\n4. Jamniki\n5. Pierwotne\n6. Goncze\n7. Wyzly\n8. Retrivery\n9. Ozdobne\n10. Charty\n11. Nieznane\nPodaj numer podtypu: ");
+                        podtyp = int.Parse(Console.ReadLine());
+                        foreach (Pies i in psy)
+                        {
+                            if (i is Owczarki && podtyp == 1)
+                            {
+                                Console.WriteLine(i);
+                            }
+                            if (i is Owczarki && podtyp == 2)
+                            {
+                                Console.WriteLine(i);
+                            }
+                            if (i is Owczarki && podtyp == 3)
+                            {
+                                Console.WriteLine(i);
+                            }
+                            if (i is Owczarki && podtyp == 4)
+                            {
+                                Console.WriteLine(i);
+                            }
+                            if (i is Owczarki && podtyp == 5)
+                            {
+                                Console.WriteLine(i);
+                            }
+                            if (i is Owczarki && podtyp == 6)
+                            {
+                                Console.WriteLine(i);
+                            }
+                            if (i is Owczarki && podtyp == 7)
+                            {
+                                Console.WriteLine(i);
+                            }
+                            if (i is Owczarki && podtyp == 8)
+                            {
+                                Console.WriteLine(i);
+                            }
+                            if (i is Owczarki && podtyp == 9)
+                            {
+                                Console.WriteLine(i);
+                            }
+                            if (i is Owczarki && podtyp == 10)
+                            {
+                                Console.WriteLine(i);
+                            }
+                            if (i is Owczarki && podtyp == 11)
+                            {
+                                Console.WriteLine(i);
+                            }
+                        }
+                        break;
+                    case 5:
                         Console.Clear();
-            Console.WriteLine("5. Wyświetlanie obiektów, których nazwa zawiera podany ciąg znaków");
-            Console.WriteLine("Podaj frazę: ");
-            string fraza = Console.ReadLine();
-            foreach (Pies i in psy)
-            {
-                if (i.Nazwa.Contains(fraza))
-                {
-                    Console.WriteLine(i);
-                }
-            }
-            break;
-            default:
+                        Console.WriteLine("5. Wyświetlanie obiektów, których nazwa zawiera podany ciąg znaków");
+                        Console.WriteLine("Podaj frazę: ");
+                        string fraza = Console.ReadLine();
+                        foreach (Pies i in psy)
+                        {
+                            if (i.Nazwa.Contains(fraza))
+                            {
+                                Console.WriteLine(i);
+                            }
+                        }
+                        break;
+                    default:
                         Console.WriteLine("Błąd! Wybierz jeszcze raz");
-            break;
+                        break;
+                }
+            } while (!done);
+            Console.ReadKey();
         }
+    }
+}
