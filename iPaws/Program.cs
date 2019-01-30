@@ -529,4 +529,57 @@ namespace iPaws
                 Console.WriteLine(aPart);
             }
             break;
+            case 4:
+                        Console.Clear();
+            Console.WriteLine("4. Wyświetlanie obiektów danego podtypu");
+            Console.WriteLine("\n1. Owczarki\n2. Molosowate\n3. Teriery\n4. Jamniki\n5. Pierwotne\n6. Goncze\n7. Wyzly\n8. Retrivery\n9. Ozdobne\n10. Charty\n11. Nieznane\nPodaj numer podtypu: ");
+            podtyp = int.Parse(Console.ReadLine());
+            foreach (Pies i in psy)
+            {
+                if (i is Owczarki && podtyp == 1)
+                {
+                    Console.WriteLine(i);
+                }
+                if (i is Owczarki && podtyp == 2)
+                {
+                    Console.WriteLine(i);
+                }
+                if (i is Owczarki && podtyp == 3)
+                {
+                    Console.WriteLine(i);
+                }
+                if (i is Owczarki && podtyp == 4)
+                {
+                    Console.WriteLine(i);
+                }
+                if (i is Owczarki && podtyp == 5)
+                {
+                    Console.WriteLine(i);
+                }
+                if (i is Owczarki && podtyp == 6)
+                {
+                    Console.WriteLine(i);
+                }
+                if (i is Owczarki && podtyp == 7)
+                {
+                    Console.WriteLine(i);
+                }
+                if (i is Owczarki && podtyp == 8)
+                {
+                    Console.WriteLine(i);
+                }
+                if (i is Owczarki && podtyp == 9)
+                {
+                    Console.WriteLine(i);
+                }
+                if (i is Owczarki && podtyp == 10)
+                {
+                    Console.WriteLine(i);
+                }
+                if (i is Owczarki && podtyp == 11)
+                {
+                    Console.WriteLine(i);
+                }
+            }
+            break;
         }
