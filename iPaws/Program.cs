@@ -582,4 +582,20 @@ namespace iPaws
                 }
             }
             break;
+             case 5:
+                        Console.Clear();
+            Console.WriteLine("5. Wyświetlanie obiektów, których nazwa zawiera podany ciąg znaków");
+            Console.WriteLine("Podaj frazę: ");
+            string fraza = Console.ReadLine();
+            foreach (Pies i in psy)
+            {
+                if (i.Nazwa.Contains(fraza))
+                {
+                    Console.WriteLine(i);
+                }
+            }
+            break;
+            default:
+                        Console.WriteLine("Błąd! Wybierz jeszcze raz");
+            break;
         }
