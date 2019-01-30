@@ -8,16 +8,16 @@ namespace iPaws
 {
     abstract class Pies
     {
-        private int Id { get; set; }
-        private string Nazwa { get; set; }
+        public int ID { get; set; }
+        public string Nazwa { get; set; }
         private string Plec { get; set; }
         private int Wiek { get; set; }
         private string Wielkosc { get; set; }
         private string Rodzaj_siersci { get; set; }
         private int Ilosc_Lap { get; set; }
-        public Pies(int Id, string Nazwa,string Plec, int Wiek, string Wielkosc, string Rodzaj_siersci, int Ilosc_Lap)
+        public Pies(int Id, string Nazwa, string Plec, int Wiek, string Wielkosc, string Rodzaj_siersci, int Ilosc_Lap)
         {
-            this.Id = Id;
+            this.ID = Id;
             this.Nazwa = Nazwa;
             this.Plec = Plec;
             this.Wiek = Wiek;
@@ -27,7 +27,7 @@ namespace iPaws
         }
         override public string ToString()
         {
-            return "Id: " + Id + " Nazwa: " + Nazwa +" Płeć: "+Plec +" Wiek: " + Wiek +" Wielkosc: " + Wielkosc + " Rodzaj siersci: " + Rodzaj_siersci + " Ilosc Lap: " + Ilosc_Lap;
+            return "Id: " + ID + " Nazwa: " + Nazwa + " Płeć: " + Plec + " Wiek: " + Wiek + " Wielkosc: " + Wielkosc + " Rodzaj siersci: " + Rodzaj_siersci + " Ilosc Lap: " + Ilosc_Lap;
         }
 
     }
