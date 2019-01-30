@@ -45,16 +45,11 @@ namespace iPaws
         }
 
     }
-
-
-
-
-
-    class  Owczarki : Rasowosc
+    class Owczarki : Rasowosc
     {
         private string Pracujace { get; set; }
 
-        public Owczarki(int Id, string Nazwa, string Plec, int Wiek, string Wielkosc, string Rodzaj_siersci, int Ilosc_Lap, string Rasowy, string Pracujace ) : base( Id, Nazwa, Plec, Wiek, Wielkosc, Rodzaj_siersci, Ilosc_Lap, Rasowy)
+        public Owczarki(int Id, string Nazwa, string Plec, int Wiek, string Wielkosc, string Rodzaj_siersci, int Ilosc_Lap, string Rasowy, string Pracujace) : base(Id, Nazwa, Plec, Wiek, Wielkosc, Rodzaj_siersci, Ilosc_Lap, Rasowy)
         {
 
             this.Pracujace = Pracujace;
