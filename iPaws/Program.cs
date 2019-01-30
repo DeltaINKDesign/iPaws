@@ -235,20 +235,17 @@ namespace iPaws
     {
         static void Main(string[] args)
         {
-            Pies[] psy = new Pies[4];
-
-            psy[0] = new Wyżły(1, "Pepka ", "Suka",4,"Mała","Krótka",4,"Tak","Biało-pomarańczowe");
-           
-           
-           
-            Console.WriteLine(psy[0]);
-            
-           
-
-           
-            Console.ReadKey();
+            List<Pies> psy = new List<Pies>();
+            bool done = false;
+            int podtyp;
+            do
+            {
+                Console.WriteLine("1. Dodawanie nowego obiektu\n2. Usuwanie obiektu o podanym identyfikatorze\n3. Wyświetlanie wszystkich zapamiętanych obiektów\n4. Wyświetlanie obiektów danego podtypu.\n5. Wyświetlanie obiektów, których nazwa zawiera podany ciąg znaków.\n");
+                int caseSwitch = int.Parse(Console.ReadLine());
+                switch (caseSwitch)
+                {
 
 
-        }
+                }
     }
 }
