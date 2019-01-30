@@ -521,4 +521,12 @@ namespace iPaws
                 }
                 break;
             }
-}
+            case 3:
+                        Console.Clear();
+            Console.WriteLine("3. Wyświetlanie wszystkich zapamiętanych obiektów");
+            foreach (Pies aPart in psy)
+            {
+                Console.WriteLine(aPart);
+            }
+            break;
+        }
