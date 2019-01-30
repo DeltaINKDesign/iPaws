@@ -61,7 +61,6 @@ namespace iPaws
         }
 
     }
-
     class Molosowate : Rasowosc
     {
         private string Dlugosc_Kufy { get; set; }
@@ -78,7 +77,6 @@ namespace iPaws
         }
 
     }
-
     class Teriery : Rasowosc
     {
         private string Szczekajace { get; set; }
