@@ -32,10 +32,10 @@ namespace iPaws
 
     }
 
-    class Rasowosc : Pies
+    abstract class Rasowosc : Pies
     {
         private string Rasowy { get; set; }
-        public Rasowosc(int Id, string Nazwa,string Plec, int Wiek, string Wielkosc, string Rodzaj_siersci, int Ilosc_Lap, string Rasowy) : base(Id,  Nazwa,Plec, Wiek,  Wielkosc, Rodzaj_siersci, Ilosc_Lap )
+        public Rasowosc(int Id, string Nazwa, string Plec, int Wiek, string Wielkosc, string Rodzaj_siersci, int Ilosc_Lap, string Rasowy) : base(Id, Nazwa, Plec, Wiek, Wielkosc, Rodzaj_siersci, Ilosc_Lap)
         {
             this.Rasowy = Rasowy;
         }
