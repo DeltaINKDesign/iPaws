@@ -244,8 +244,13 @@ namespace iPaws
                 int caseSwitch = int.Parse(Console.ReadLine());
                 switch (caseSwitch)
                 {
+                    case 1:
+                        Console.Clear();
+                        Console.WriteLine("1. Dodawanie nowego obiektu. Podaj numer podtypu:\n1. Owczarki\n2. Molosowate\n3. Teriery\n4. Jamniki\n5. Pierwotne\n6. Goncze\n7. Wyzly\n8. Retrivery\n9. Ozdobne\n10. Charty\n11. Nieznane\n");
+                        podtyp = int.Parse(Console.ReadLine());
+                        switch (podtyp)
+                        {
 
-
-                }
+                        }
     }
 }
